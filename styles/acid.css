@@ -1,0 +1,465 @@
+
+/*General
+------------------------------------------------------------------------------------------------------*/
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	cursor: default;
+}
+
+body {
+	/*background-color: #002147;*/
+	font-family: 'Roboto', sans-serif;	
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+hr {
+	width: 50%;
+	align: center;
+}
+
+/*Encabezado
+------------------------------------------------------------------------------------------------------*/	
+
+header {
+	background-color: black;	
+	position:fixed;	
+	width:100%;	
+	z-index:1;
+	top:0;
+}
+
+#logo{
+	float:left;
+	margin-left: 5px;
+	margin-top: 7px;
+	margin-bottom: 2px;
+}
+
+#titulo {
+	display: block;
+	float: left;
+	margin: 5px 0 0 7px ;
+	font-family: 'Molle', cursive;
+	color:white;	
+	transition: color 0.5s;
+}
+
+#titulo:hover {
+	animation: shake 1.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+    	transform: translate(1px, 1px) rotate(0deg);
+		color:#F781F3;
+    }
+    10% { 
+    	transform: translate(-1px, -2px) rotate(-1deg);
+    	color:#9A2EFE; 
+    }
+    20% { 
+    	transform: translate(-3px, 0px) rotate(1deg);
+		color:#0000FF;
+    }
+    30% {
+    	transform: translate(3px, 2px) rotate(0deg);
+    	color: #2ECCFA;
+    }
+    40% { 
+    	transform: translate(1px, -1px) rotate(1deg);
+    	color: #2EFE2E; 
+    }
+    50% { 
+    	transform: translate(-1px, 2px) rotate(-1deg);
+    	color:#9AFE2E;
+    }
+    60% { 
+    	transform: translate(-3px, 1px) rotate(0deg);
+    	color:#FFFF00;
+    }
+    70% {
+     transform: translate(3px, 1px) rotate(-1deg);
+     color:#FF8000; 
+ 	}
+    80% {
+     	transform: translate(-1px, -1px) rotate(1deg);
+     	color:#FF4000; 
+    }
+    90% {
+    	transform: translate(1px, 2px) rotate(0deg);
+    	color:#FF0000;
+    }
+    100% {
+    	transform: translate(1px, -2px) rotate(-1deg);
+    	color:#00FF00;
+    }
+}
+/*Categorias
+-----------------------------------------*/
+
+.lista ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.lista li {
+	float: right;
+}
+
+.lista li a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 13px;
+    transition:all 0.3s ease;
+}
+
+.lista li a:hover {
+	background-color: orangered;
+	color: black;
+}
+
+/*Buscar
+--------------------------*/
+
+.buscar {
+	float: left;
+}
+
+.buscar input[type=text] {
+  padding: 6px;
+  margin: 8px 2px 0 4px;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 80px;
+  transition: width 0.5s;
+}
+
+.buscar input[type=text]:hover {
+	width: 200px;
+}
+
+.buscar input[type=text]:focus {
+	width: 200px;
+}
+
+.buscar button {              
+	float: right;
+	padding: 6px;	
+	margin-top: 8px;
+	margin-right: 16px;
+	background-color:black;	
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	transition: all 0.5s;
+}
+
+.buscar button:hover {
+	color:black;
+	background-color: orangered;
+}
+
+/*dropdown 
+--------------------------------------------------------------------------------------------------------------------------------*/
+
+.sub-lista {
+	max-height: 0;
+	overflow:hidden;
+	position:absolute;
+	z-index:1;
+	background-color:black;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+	transition: max-height 0.5s ease;
+}
+
+.sub-lista a {
+	text-align:left !important;
+	font-size: 18px;
+}
+
+#series:hover .sub-lista {
+	max-height: 200px	
+}
+
+#peliculas:hover .sub-lista {
+	max-height: 200px;
+}
+
+/*Night-mode
+------------------*/
+
+#luna {
+	color:white;
+	background-color: black;
+	font-size: 30px;
+	border-radius: 10px;
+	padding:2px;
+
+}
+
+/*Redes
+----------------------------------------------------------------------------------------------------------------------------------*/
+
+#redes {
+	position: fixed;
+	background-color: white;
+	padding: 5px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: black;
+	border-width: 3px;
+	margin-left: 5px;
+	bottom: 10%;
+	z-index:3;
+}
+
+#redes ul li i {
+	display: block;
+	font-size: 40px;
+	color: black;
+	transition: color 0.5s;
+}
+
+#facebook:hover {
+	color:rgb(59,89,152);
+}
+
+#twitter:hover {
+	color:rgb(8,160,233);
+}
+
+#tumblr:hover {
+	color:rgb(54,70,93) ;
+}
+
+#reddit:hover {
+	color:rgb(255,69,0);
+}
+
+#google-plus:hover {
+	color:rgb(211,72,54);
+}
+
+#instagram:hover {
+	color:rgb(205,72,107);
+}
+
+/*Galeria
+---------------------------------------------------------------------------------------------------------------------------------*/
+
+#galeria-principal {
+	display:block;
+	font-family: Helvetica;
+	position: relative;
+	margin-top: 45px;	
+	width:100%;
+}
+
+#img-principal {
+	display: block;
+	background-size: 130%;
+	background-position: center-top;
+	background-repeat: no-repeat;
+	position:relative;
+	height:450px;
+	transition:all .5s ease;
+}
+
+#img-principal:hover {
+	background-size:100%;
+}
+
+#img-principal:hover .descripcion {
+	height: 100px;
+	opacity:1;
+}
+
+/*Descripciones
+----------------------------------*/
+
+.titulo-descripcion {
+	position:absolute;
+	width:30%;
+	background-color: rgba(0,0,0,0.8);
+	color:#f1f1f1;
+	margin-left: 10%;
+	border-radius:0 0 20px 20px;
+	padding:10px;
+}
+
+.titulo-descripcion h2, .titulo-descripcion span {
+	margin-left: 15%;
+}
+
+
+.descripcion {
+	position:absolute;
+	bottom:0;
+	background-color: rgba(0,0,0,0.6);
+	color:#f1f1f1;
+	width:50%;
+	height:0;
+	padding:20px;
+	opacity:0;
+	transition:0.5s ease;
+	border-radius:20px 20px 0 0;
+	right:0;
+
+}
+
+.descripcion p {
+	padding:0 7px;
+}
+
+/*Imagenes de abajo (indice?)
+------------------------------*/
+
+.demo {
+	position:relative;
+	width:100%;
+	height: 100px;
+	background-color: black;
+}
+
+.demo ul {	
+	position:relative;
+	display:block;
+	margin-left:2.5%;
+
+}
+
+.demo ul li{
+	display:block;
+	float: left;
+}
+
+.demo-columna {
+	display:block;
+
+}
+
+.demo-img {
+	opacity:0.5;
+	height: 150px;
+	transition: 0.5s;
+	position: relative;
+	height:100px;
+	width:160px;
+
+}
+
+.demo-img:hover {
+	opacity:1;
+}
+
+.demo-img:hover #img-principal {
+	animation-name: fade;
+	animation-duration: 0.5s;
+}
+
+@keyframes fade {
+	from {opacity:0.5;}
+	to {opacity:1;}
+}
+
+/*Barra Lateral
+----------------------------------------------------------------------------------------------------------------------------------*/
+
+.barra-lateral {
+	display:block;
+	position:relative;
+	background-color: black;
+	float: right;	
+	height: 80%;
+	width: 25%;
+	bottom:0;
+	/*right:0;*/
+	border-radius: 10px 0 0 10px;
+}
+
+.cat-barra {
+	position:absolute;
+	width:300px;
+	height:50px;
+	background-color: blue;
+	border-radius: 5px 0 0 5px;
+	right:-100px;
+	transition: 1s;
+}
+
+.cat-barra .text-cat {
+	left:-60px;
+	color:white;
+	float:left;
+	margin-left:15px;
+}
+
+.cat-barra i {
+	color:white;
+	float: left;
+	font-size: 50px;
+	transition:.8s;
+	margin-left: 5px;
+}
+
+.cat-desc {
+	color:white;
+	float:left;
+	margin-left:25px;
+	opacity:0;
+	transition:1s;
+}
+
+.cat-barra:hover {
+	right:0;
+	height:90px;
+}
+
+.cat-barra:hover i {
+	font-size:80px;
+}
+
+.cat-barra:hover .cat-desc {
+	opacity: 1;
+}
+
+#cat-peliculas {
+	background-color:#003326;
+	top:20px;
+}
+
+#cat-series {
+	background-color:#004d39;
+	top:120px; 
+}
+
+#cat-musica {
+	background-color:#00664d;
+	top:220px; 
+}
+
+#cat-posts {
+	background-color:#008060;
+	top: 320px; 
+}
+
+#cat-libros {
+	background-color:#009973;
+	top:420px; 
+}

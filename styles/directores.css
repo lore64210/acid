@@ -1,0 +1,31 @@
+.director{
+	height: 500px;
+	width: 100%;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: cover;
+	opacity: 0.9;
+	transition: all .7s;
+}	
+
+.descripcion{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: black;
+	margin-top: 434px;
+	transition: all 1.5s;
+}
+
+.director:hover{
+	opacity:1;
+}
+
+.director:hover .descripcion{
+	margin-top: 200px;	
+	opacity: 0.8;
+	width: 40%;
+	border-radius: 30px;
+}
