@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Acid</title>
+	<script src="jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../styles/general.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/directores.css" />
+	<link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+	<meta name="description" content="Pagina de peliculas y series en desarrollo"/>
+	<meta name="keywords" content="peliculas,series,"/>
+	<!--buscar una buena descripcion para este tipo de paginas-->
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Molle:400i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+</head>
+<body>
+
+	<!--Encabezado, tiene que ir en todas las paginas-->
+
+	<header>
+	<div id="logo">
+		<a href="acid.html"><img src="../galeria/logo.png" height="33" alt="logo"></a>
+	</div>
+		<a href="acid.html"><h1 id="titulo">Acid</h1></a>		
+		
+		<div class="lista">
+			<ul>
+				<li title="Buscar">
+				<div class="buscar">
+				<form action="#"> 			<!--aca va el algoritmo de busqueda-->
+
+					<input type="text" placeholder="Buscar.." name="buscar">
+					<button type="submit"><i class="fa fa-search"></i></button>
+
+				</form>
+				</div>	
+				</li>
+				<li><a href="#" target="_blank" title="Contacto"><i class="fa fa-envelope"></i></a></li>
+				<li id="series">
+					<a href="#" target="_blank"><h3>Series</h3></a>
+						<div class="sub-lista">
+							<a href="#" target="_blank">Generos</a>
+							<a href="#" target="_blank">Mas vistas</a>
+							<a href="#" target="_blank">Mejor valoradas</a>
+							<a href="#" target="_blank">Ultimos capitulos</a>					
+						</div>
+				</li>
+				<li id="peliculas">
+					<a href="#" target="_blank" ><h3>Peliculas</h3></a>
+						<div class="sub-lista">
+							<a href="#" target="_blank">Generos</a>
+							<a href="#" target="_blank">Mas vistas</a>
+							<a href="#" target="_blank">Mejor valoradas</a>
+							<a href="#" target="_blank">Ultimas peliculas</a>
+						</div>
+					
+				</li>
+				<li><i id="luna" class="fa fa-moon-o"></i></li>
+			</ul>
+		</div>
+		
+	</header>
+
+	<!--Links a redes sociales-->
+
+	<div id="redes">
+		<ul>
+			<li><a href="#" target="_blank"><i id="facebook" class="fa fa-facebook-square"></i></a></li>
+			<li><a href="#" target="_blank"><i id="google-plus" class="fa fa-google-plus-square"></i></a></li>
+			<li><a href="#" target="_blank"><i id="tumblr" class="fa fa-tumblr-square"></i></a></li>
+			<li><a href="#" target="_blank"><i id="instagram" class="fa fa-instagram"></i></a></li>
+			<li><a href="#" target="_blank"><i id="twitter" class="fa fa-twitter-square"></i></a></li>
+			<li><a href="#" target="_blank"><i id="reddit" class="fa fa-reddit-square"></i></a></li>
+		</ul>
+	</div>
+
+
+	<!--Directores, efecto parallax-->
+	<br><br><br><br>
+	<h2>Directores de cine:</h2>
+	<br>
+	<div class="director" style="background-image: url('../galeria/dir1.jpg')">
+		<span class="descripcion">
+			<h2>Woody Allen</h2>
+			<p>Demostrar las complejidades de la vida moderna en pareja<br>con humor, culto, y ambientacion de epocas pasadas</p>
+		</span>
+	</div>
+
+	<div class="director" style="background-image: url('../galeria/dir2.jpg')">
+		<span class="descripcion">
+			<h2>Martin Scorcese</h2>
+			<p>Personificar las historias, filmar el infierno<br>mostrando personajes obsesivos, pasionales, excluidos y solitarios</p>
+		</span>
+	</div>
+
+	<div class="director" style="background-image: url('../galeria/dir3.jpg')">
+		<span class="descripcion">
+			<h2>Quentin Tarantino</h2>
+			<p>Tramas divertidas, charlas verdaderas<br>con sangre, sangre, y sangre</p>
+		</span>
+	</div>
+
+	<div class="director" style="background-image: url('../galeria/dir4.jpg')">
+		<span class="descripcion">
+			<h2>Stanley Kubrick</h2>
+			<p>El eje central de sus peliculas<br>es sobre personajes desgarrados moralmente</p>
+		</span>
+	</div>
+
+
+</body>
+</html>

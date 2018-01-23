@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Acid</title>
+	<script src="jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../styles/acid.css" />
+	<link type="image/x-icon" href="../galeria/favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+	<meta name="description" content="Pagina de peliculas y series en desarrollo"/>
+	<meta name="keywords" content="peliculas,series,"/>
+	<!--buscar una buena descripcion para este tipo de paginas-->
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Molle:400i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+</head>
+<body>
+
+	<!--Encabezado, tiene que ir en todas las paginas------------------------------------------------------------------------>
+
+	<header>
+	<div id="logo">
+		<img src="logo.png" height="33" alt="logo">
+	</div>
+		<h1 id="titulo">Acid</h1>		
+		
+		<div class="lista">
+			<ul>
+				<li title="Buscar">
+				<div class="buscar">
+				<form action="#"> 			<!--aca va el algoritmo de busqueda-->
+
+					<input type="text" placeholder="Buscar.." name="buscar">
+					<button type="submit"><i class="fa fa-search"></i></button>
+
+				</form>
+				</div>	
+				</li>
+				<li><a href="#" target="_blank" title="Contacto"><i class="fa fa-envelope"></i></a></li>
+				<li id="series">
+					<a href="#" target="_blank"><h3>Series</h3></a>
+						<div class="sub-lista">
+							<a href="#" target="_blank">Generos</a>
+							<a href="#" target="_blank">Mas vistas</a>
+							<a href="#" target="_blank">Mejor valoradas</a>
+							<a href="#" target="_blank">Ultimos capitulos</a>					
+						</div>
+				</li>
+				<li id="peliculas">
+					<a href="#" target="_blank" ><h3>Peliculas</h3></a>
+						<div class="sub-lista">
+							<a href="#" target="_blank">Generos</a>
+							<a href="#" target="_blank">Mas vistas</a>
+							<a href="#" target="_blank">Mejor valoradas</a>
+							<a href="#" target="_blank">Ultimas peliculas</a>
+						</div>
+					
+				</li>
+				<li><i id="luna" class="fa fa-moon-o"></i></li>
+			</ul>
+		</div>
+		
+	</header>
+
+	<!--Links a redes sociales-->
+
+	<div id="redes">
+		<ul>
+			<li><a href="#" target="_blank"><i id="facebook" class="fa fa-facebook-square"></i></a></li>
+			<li><a href="#" target="_blank"><i id="google-plus" class="fa fa-google-plus-square"></i></a></li>
+			<li><a href="#" target="_blank"><i id="tumblr" class="fa fa-tumblr-square"></i></a></li>
+			<li><a href="#" target="_blank"><i id="instagram" class="fa fa-instagram"></i></a></li>
+			<li><a href="#" target="_blank"><i id="twitter" class="fa fa-twitter-square"></i></a></li>
+			<li><a href="#" target="_blank"><i id="reddit" class="fa fa-reddit-square"></i></a></li>
+		</ul>
+	</div>
+	
+	<!--Galerias de imagenes-------------------------------------------------------------------------------------->
+
+	<div id="galeria-principal">
+		<div id="img-principal" style="background-image: url('../galeria/img1.jpg');">
+			
+			<div class="titulo-descripcion" id="tit-descripcion1">
+				<h2>Tarantino</h2>
+				<span>Gracias por tanto mostro</span>
+			</div>
+			<div class="descripcion" id="descripcion-img1">
+				<p>Si no viste alguna de estas, ya esta<br> ya sabes que mirar</p>
+			</div>
+			
+			<div class="titulo-descripcion" id="tit-descripcion2">
+				<h2>Better Call Saul</h2>
+				<span>mmmmm.... nose nose</span>
+			</div>
+			<div class="descripcion" id="descripcion-img2">
+				<span>Viste Breaking Bad, LA serie,<br> pero no sabes si su precuela vale la pena? <br> pasa crack, te doy mi opinion</span>
+			</div>	
+			
+			<div class="titulo-descripcion" id="tit-descripcion3">
+				<h2>Jim Carrey</h2>
+				<span>Que anda pasando?</span>
+			</div>
+			<div class="descripcion" id="descripcion-img3">
+				<span>Un poco de historia.<br>Y ya que estamos, sus mejores peliculas</span>
+			</div>
+			
+			<div class="titulo-descripcion" id="tit-descripcion4">
+				<h2>Waking Life</h2>
+				<span>Para mirar varias veces</span>
+			</div>
+			<div class="descripcion" id="descripcion-img4">
+				<span>No es para cualquiera.<br>Es terrible viaje,<br>pero tenes que prestar mucha atencion </span>
+			</div>
+			
+			<div class="titulo-descripcion" id="tit-descripcion5">
+				<h2>Your name</h2>
+				<span>Un anime cada tanto viene joya</span>
+			</div>
+			<div class="descripcion" id="descripcion-img5">	
+				<span>Que tiene este de especial?<br>Todo pibe, todo. </span>
+			</div>
+
+			
+
+			<div class="titulo-descripcion" id="tit-descripcion6">
+				<h2>The Big Lebowski</h2>
+				<span>La combinacion perfecta de delirio y realidad</span>
+			</div>
+			<div class="descripcion" id="descripcion-img6">	
+				<span>The dude<br> </span>
+			</div>
+
+			<div class="titulo-descripcion" id="tit-descripcion7">
+				<h2>Tenacious d</h2>
+				<span>Mas que una peli</span>
+			</div>
+			<div class="descripcion" id="descripcion-img7">	
+				<span>Son comediantes<br>Pero la polenta que le ponen los aleja de ser una simple parodia<br>RocknRoll nenene </span>
+			</div>
+		
+			<div class="titulo-descripcion" id="tit-descripcion8">
+				<h2>Paprika</h2>
+				<span>Sin palabras</span>
+			</div>
+			<div class="descripcion" id="descripcion-img8">	
+				<span>Si encontras aquello que inspiro a matrix,<br>vas a tener que pegarle una ojeada. </span>
+			</div>
+		
+		</div>
+
+
+	</div>
+
+		<!--Imagenes de demostracion-->
+		
+		<div class="demo">
+		<ul>
+			<li><div class="demo-columna"><img src="../galeria/img1.jpg" class="demo-img" onmouseover="posicionMouse(1)"></div></li>
+			<li><div class="demo-columna"><img src="../galeria/img2.jpg" class="demo-img" onmouseover="posicionMouse(2)"></div></li>
+			<li><div class="demo-columna"><img src="../galeria/img3.jpg" class="demo-img" onmouseover="posicionMouse(3)"></div></li>
+			<li><div class="demo-columna"><img src="../galeria/img4.jpg" class="demo-img" onmouseover="posicionMouse(4)"></div></li>
+			<li><div class="demo-columna"><img src="../galeria/img5.jpg" class="demo-img" onmouseover="posicionMouse(5)"></div></li>
+			<li><div class="demo-columna"><img src="../galeria/img6.jpg" class="demo-img" onmouseover="posicionMouse(6)"></div></li>
+			<li><div class="demo-columna"><img src="../galeria/img7.jpg" class="demo-img" onmouseover="posicionMouse(7)"></div></li>
+			<li><div class="demo-columna"><img src="../galeria/img8.jpg" class="demo-img" onmouseover="posicionMouse(8)"></div></li>			
+		</ul>
+		</div>
+	
+
+
+	<div class="barra-lateral">
+		
+		<div id="cat-peliculas" class="cat-barra">
+			<a href="">
+				<i class="material-icons">local_movies</i>
+				<h2 class="text-cat">Peliculas</h2><br><br>
+				<span class="cat-desc">2 horas bien invertidas</span>
+			</a>
+		</div>
+		
+		<div id="cat-series" class="cat-barra">
+			<a href="">
+				<i class="material-icons">movie</i>
+				<h2 class="text-cat">Series</h2><br><br>
+				<span class="cat-desc">Nectar de la vida</span>
+			</a>
+		</div>
+		
+		<div id="cat-musica" class="cat-barra">
+			<a href="">
+				<i class="fa fa-music"></i>
+				<h2 class="text-cat">Musica</h2><br><br>
+				<span class="cat-desc">All the night</span>
+			</a>
+		</div>
+		
+		<div id="cat-posts" class="cat-barra">
+			<a href="">
+				<i class="fa fa-file-o"></i>
+				<h2 class="text-cat">Posts</h2><br><br>
+				<span class="cat-desc">La posta</span>
+			</a>
+		</div>
+		
+		<div id="cat-libros" class="cat-barra">
+			<a href="">
+				<i class="fa fa-book"></i>
+				<h2 class="text-cat">Libros</h2><br><br>
+				<span class="cat-desc">Conocimiento es poder<br> papá</span>
+			</a>
+		</div>
+	</div>
+
+
+
+	<!--Aca va el copyright y toda esa zarasa que ni idea que hacer-->
+	<footer>
+		<br>
+		<hr>
+		<p>dasdsada</p>	
+	</footer>
+
+	<script src="../scripts/acid.js"></script>
+
+</body>
+</html>
